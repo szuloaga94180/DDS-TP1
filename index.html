@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Formulario inscripcion</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">Other page</a>
+    </nav>
+    <main>
+      <h1>Formulario inscripcion</h1>
+
+      <form action="" method="GET">
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" minlength="2" required><br><br>
+          
+          <label for="apellido">Apellido:</label><br>
+          <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" minlength="2" required><br><br>
+          
+          <label for="fechaNac">Fecha de nacimiento:</label><br>
+          <input type="date" id="fechaNac" name="fechaNac" name="fecha" id="" required><br><br>
+          
+          <label for="edad">Edad:</label><br>
+          <input type="number" id="edad" name="edad" placeholder="Edad" min="0" required><br><br>
+          
+          <label for="genero">Seleccione su genero:</label><br>
+          <select name="genero" id="" required>
+              <option value="" selected disabled>Seleccionar</option>
+              <option value="1">Masculino</option>
+              <option value="2">Femenino</option>
+              <option value="3">Otro</option>
+          </select>
+          <br><br>
+
+          <label for="matFav">Seleccione su materia favorita:</label><br>
+          <select name="matFav id="matFav" required>
+            <option value="" selected disabled>Seleccionar</option>
+            <option value="1">Diseño de sistemas</option>
+            <option value="2">Desarrollo de software</option>
+            <option value="3">Bases de datos</option>
+            <option value="4">Otro</option>
+          </select>
+          <br><br>
+
+          <div class="skills"><br>
+            <label for="">Habilidades:</label> <br>
+            <input type="checkbox" name="hab1" id="hab1">
+            <label for="hab1">Python</label><br>
+  
+            <input type="checkbox" name="hab2" id="hab2">
+            <label for="hab2">JavaScript</label><br>
+  
+            <input type="checkbox" name="hab3" id="hab3">
+            <label for="hab3">Java</label><br>
+  
+            <input type="checkbox" name="hab4" id="hab4">
+            <label for="hab4">C#</label><br>
+  
+            <input type="checkbox" name="hab5" id="hab5">
+            <label for="hab5">C++</label><br>
+          </div>
+
+          
+  
+          <br>
+          <div class="interes"><br>
+            <label for="interes">Seleccione nivel de interes de la materia:</label><br>
+         
+            <input type="radio" name="interesMat" id="interesMat1">
+            <label for="interesMat1">Bajo</label><br>
+            
+   
+            <input type="radio" name="interesMat" id="interesMat2">
+            <label for="interesMat2">Medio</label><br>
+   
+            <input type="radio" name="interesMat" id="interesMat3">
+            <label for="interesMat3">Alto</label><br>
+   
+            <input type="radio" name="interesMat" id="interesMat4">
+            <label for="interesMat4">Muy alto</label><br>
+          </div>
+         
+         
+
+          <br><br>
+          <label for="comentarios">Ingrese comentarios adicionales:</label><br>
+          <textarea name="comentarios" id="comentarios" cols="30" rows="10" required></textarea>
+          <br>
+          <button type="submit">Enviar</button>
+
+      </form>
+      
+    </main>
+  </body>
+</html>
